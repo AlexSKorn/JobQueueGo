@@ -1,0 +1,32 @@
+# Project Name
+
+Description of your project.
+
+## Getting Started
+
+### Prerequisites
+
+- Go (version 1.22.2)
+- Other dependencies...
+
+### Running the app
+
+1. Go to the root
+2. make run
+
+## Improvements
+
+Here are some areas for improvement:
+  * Add some unit tests
+  * Split out the files a bit more to make it a bit more reusable
+  * Set up some constants for things like "Queued", "Conlcuded" etc...
+  * Dockerize it.
+  * Setup the makefile to run
+  * Setup an API document such as a swagger.
+  * Could add authentication/authorization stuff.
+
+Here are some code changes I would like to make if I had more time/would like to consider some tradeoffs
+ * I wouldn't like to assign the job ID as the order of which it is put into the queue.
+ * Do we need to? It seems like there should be an ability to prioritize something or push it to the front of the queue if needed, since there is a time_critical element
+ * I would like to actually remove the concluded and already processed jobs from the queue instead of keeping them there for historical reference.
+ * 
